@@ -9,7 +9,7 @@ Key things to make it work:
     settings.RemoteDebuggingPort = 8081;
     Cef.Initialize(settings);
 ```
-2. Version of Selenium.WebDriver.ChromeDriver in the test project is to be aligned with the version of cef.redist libraries in the CefSharp app. (e.g. this example is based on Chrome v81)
+2. Version of Selenium.WebDriver.ChromeDriver in the test project is to be aligned with the version of cef.redist libraries in the CefSharp app. (e.g. this example is based on ChromeDriver v81. as well as the demo app is built on Chromium v81)
 3. Tests initialization part should include setting of the ChromeOptions object property "DebuggerAddress"
 ```c#
     ChromeOptions options = new ChromeOptions();
